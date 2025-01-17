@@ -121,32 +121,42 @@ function placeFood() {
 }
 
 function moveup() {
-    velocityX = 0;
-    velocityY = -1;
+    if (velocityY !== 1) {
+        velocityX = 0;
+        velocityY = -1;
+    }
 }
 
 function moveDown() {
-    velocityX = 0;
-    velocityY = 1;
+    if (velocityY !== -1){
+        velocityX = 0;
+        velocityY = 1;
+    }
 }
 
 function moveRight() {
-    velocityX = 1;
-    velocityY = 0;
+    if ( velocityX !== -1) {
+        velocityX = 1;
+        velocityY = 0;
+    }
+    
 }
 
 function moveLeft() {
-    velocityX = -1;
-    velocityY = 0;
+    if (velocityX !== 1) {
+        velocityX = -1;
+        velocityY = 0;
+    }
+    
 }
 function changeDirection(e) {
-    if (e.key === "ArrowUp" && velocityY !== 1) {
+    if (e.key === "ArrowUp") {
         moveup();
-    } else if (e.key === "ArrowDown" && velocityY !== -1) {
+    } else if (e.key === "ArrowDown") {
         moveDown();
-    } else if (e.key === "ArrowRight" && velocityX !== -1) {
+    } else if (e.key === "ArrowRight") {
         moveRight();
-    } else if (e.key === "ArrowLeft" && velocityX !== 1) {
+    } else if (e.key === "ArrowLeft") {
         moveLeft();
     }
     arrowUp.addEventListener("click", moveup);
