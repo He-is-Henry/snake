@@ -133,7 +133,7 @@ img {
   flex-direction: column;
 }
 
-@media (min-width: 900) {
+@media (min-width: 900px) {
   .arrows-container {
     display: none;
   }
