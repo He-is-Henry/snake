@@ -1,0 +1,140 @@
+/* .container {
+  position: relative;
+  border: 2px solid blue;
+  width: 80vw;
+  margin: 10px auto;
+  height: 65vh;
+  overflow: hidden;
+}
+
+.innerContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+}
+
+.snake {
+  position: absolute;
+}
+
+.snake-body,
+.snake-head {
+  width: 10px;
+  background-color: blueviolet;
+  height: 10px;
+  transition: transform 0.2 ease;
+}
+
+.snake-head {
+  border-radius: 0 5px 5px 0;
+}
+
+.directions {
+  max-height: 20vh;
+  text-align: center;
+}
+.direction {
+  position: relative;
+  width: 50px;
+  background-color: rgb(81, 81, 240);
+  height: 10px;
+  margin: 25px;
+  font-size: larger;
+}
+
+.score-counter {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+
+.pause-icon {
+  height: 50px;
+  background-color: beige;
+  border: 1px solid #333;
+  padding: 3px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.message {
+  text-align: center;
+  text-transform: capitalize;
+  background-color: blueviolet;
+  font-size: larger;
+  margin: 30px;
+}
+ */
+
+body {
+  text-align: center;
+  font: "courier new", courier, monospace;
+}
+
+.score-counter {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.container {
+  align-items: center;
+  text-align: center;
+}
+
+.message {
+  text-align: center;
+  text-transform: capitalize;
+  background-color: lime;
+  border: 2px solid red;
+  border-radius: 15px;
+  font-size: larger;
+  margin: 30px;
+  position: absolute;
+  width: 250px;
+  top: 50vh;
+  left: calc(50vw - 150px);
+}
+
+img {
+  width: 15vw;
+  height: auto;
+}
+
+.left {
+  transform: rotate(-180deg);
+  margin-right: 20px;
+}
+
+.right {
+  transform: rotate(0deg);
+  margin-left: 20px;
+}
+
+.down {
+  transform: rotate(90deg);
+  margin-top: 20px;
+}
+
+.up {
+  transform: rotate(-90deg);
+  margin-bottom: 20px;
+}
+
+.arrows-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 900) {
+  .arrows-container {
+    display: none;
+  }
+}
