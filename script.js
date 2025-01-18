@@ -163,7 +163,6 @@ function changeDirection(e) {
     arrowRight.addEventListener("click", moveRight);
     arrowLeft.addEventListener("click", moveLeft);
 }
-
 function renderMessage() {
     message.style.display = "block";
      message.innerHTML = "Game over, click here or press enter to continue"
