@@ -158,11 +158,12 @@ function changeDirection(e) {
     } else if (e.key === "ArrowLeft") {
         moveLeft();
     }
+}
     arrowUp.addEventListener("click", moveup);
     arrowDown.addEventListener("click", moveDown);
     arrowRight.addEventListener("click", moveRight);
     arrowLeft.addEventListener("click", moveLeft);
-}
+
 function renderMessage() {
     message.style.display = "block";
      message.innerHTML = "Game over, click here or press enter to continue"
