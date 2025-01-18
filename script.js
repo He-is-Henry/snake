@@ -8,8 +8,8 @@ let snakeBody = [];
 let snakeX = blocksize * 5;
 let snakeY = blocksize * 5;
 
-velocityX = 0;
-velocityY = 0;
+let velocityX = 0;
+let velocityY = 0;
 
 // food
 let foodX;
@@ -25,14 +25,14 @@ const arrowRight = document.querySelector(".right");
 
 
 // message 
-message = document.querySelector(".message");
+let message = document.querySelector(".message");
 message.style.display = "none";
 //score 
 let currentScoreElement = document.querySelector(".currentScore");
 let highScoreElement = document.querySelector(".highScore");
-highScore = JSON.parse(localStorage.getItem("highScore")) || 0;
+let highScore = JSON.parse(localStorage.getItem("highScore")) || 0;
 highScoreElement.innerHTML = highScore;
-currentScore = 0;
+let currentScore = 0;
 
 board.height = rows * blocksize;
 board.width = cols * blocksize;
@@ -98,7 +98,7 @@ function update() {
         if(currentScore > highScore) {
             highScore = currentScore;
         } else {
-            highScore = highScore;
+            highScore += 0;
         }
         highScoreElement.innerHTML = highScore;
         localStorage.setItem("highScore", JSON.stringify(highScore));
@@ -146,8 +146,7 @@ function moveLeft() {
     if (velocityX !== 1) {
         velocityX = -1;
         velocityY = 0;
-    }
-    
+    } 
 }
 function changeDirection(e) {
     if (e.key === "ArrowUp") {
