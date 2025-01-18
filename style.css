@@ -96,7 +96,8 @@ body {
   font-size: larger;
   margin: 30px;
   position: absolute;
-  width: 250px;
+  width: 270px;
+  z-index: 1;
   top: 50vh;
   left: calc(50vw - 150px);
 }
