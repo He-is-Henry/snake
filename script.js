@@ -1,7 +1,7 @@
 // board
 const blocksize = window.innerWidth < 600 ? Math.floor(window.innerWidth / 25 ) : 25;
-const rows = window.innerWidth < 600 ? 25 : 20;
-const cols = window.innerWidth < 600 ? 25 : 20;
+const rows = window.innerWidth < 600 ? 30 : 20;
+const cols = window.innerWidth < 600 ? 30 : 20;
 const board = document.querySelector(".board");
 let snakeBody = [];
 // snake
