@@ -1,5 +1,5 @@
 // board
-const blocksize = window.innerWidth < 600 ? Math.floor(window.innerWidth / 25 ) : 25;
+const blocksize = window.innerWidth < 600 ? Math.floor(window.innerWidth / 20 ) : 25;
 const rows = 20;
 const cols = 20;
 const board = document.querySelector(".board");
